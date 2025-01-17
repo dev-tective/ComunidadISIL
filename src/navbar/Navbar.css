@@ -1,0 +1,138 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 clamp(15px, 6vw, 50px);
+    width: 100%;
+    height: 65px;
+    overflow-y: auto;
+    background-color: var(--plomo);
+    z-index: 98;
+    position: sticky;
+    top: 0;
+}
+.navbar h1{
+    font-size: 25px;
+}
+.navbar i {
+    font-size: 30px;
+    transition: 300ms opacity ease-in-out;
+}
+.navbar img {
+    aspect-ratio: 1 / 1;
+    width: 40px;
+    border-radius: 50%;
+}
+.navbar i:hover {
+    color: var(--celeste);
+}
+
+.options-nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+    z-index: 100;
+    font-size: 25px;
+    background: rgba(49, 49, 49, 0.63);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 400ms ease-in-out;
+}
+.options-nav-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.options-nav-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    cursor: pointer;
+}
+.options-nav-option i {
+    width: 50px;
+    text-align: center;
+}
+.options-nav-option:hover {
+    color: var(--celeste);
+}
+@media (max-width: 768px) {
+    .options-nav {
+        width: 80%;
+    }
+}
+@media (max-width: 480px) {
+    .options-nav {
+        width: 100%;
+    }
+}
+
+.user-menu-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    z-index: 99;
+    position: fixed;
+    right: 5.5%;
+    top: 55px;
+    background: rgba(49, 49, 49, 0.63);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.user-menu-modal header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-wrap: wrap;
+}
+.user-menu-modal header img {
+    width: 130px;
+    aspect-ratio: 1 / 1;
+}
+.user-menu-modal aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    gap: 5px;
+    overflow: hidden;
+}
+.user-menu-modal aside span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    font-size: 20px;
+    background: rgba(89, 88, 88, 0.63);
+    transition: 200ms ease-in-out;
+}
+.user-menu-modal aside span:hover {
+    background: rgba(173, 173, 173, 0.63);
+}
+.modal-close {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}

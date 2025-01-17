@@ -1,0 +1,90 @@
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-navbar {
+  margin-top: 100px;
+}
+
+.anchor-field {
+  background: var(--plomo);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 20px 0;
+}
+.anchor-field a {
+  color: var(--celeste);
+  cursor: pointer;
+}
+
+.primaryButton, .secondaryButton {
+  width: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  font-size: 20px;
+}
+.primaryButton {
+  background: var(--buttonPlomo);
+}
+.primaryButton:hover {
+  background: var(--celeste);
+}
+.secondaryButton {
+  background: var(--buttonPlomo);
+}
+.secondaryButton:hover {
+  background: var(--dorado);
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.76);
+}
+.modal-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 280px;
+  width: 22%;
+  aspect-ratio: 1 / 1;
+  padding: 20px 30px;
+  gap: 10px;
+  background: var(--plomo);
+  border-radius: 10px;
+}
+.modal-message h1 {
+  color: var(--celeste);
+  text-align: center;
+}
+.modal-message pre {
+  width: fit-content;
+  text-wrap: wrap;
+}
+.modal-message button {
+  width: 70%;
+}
+
+.arrow-up {
+  position: fixed;
+  z-index: 10;
+  bottom: 5%;
+  right: 5%;
+  font-size: 30px;
+}

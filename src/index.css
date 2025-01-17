@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --celeste: #00d7fd;
+  --dorado: #ffd11b;
+  --plomo: rgb(33, 33, 33);
+  --buttonPlomo: #313131;
+  --bg: #151515;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  background-color: var(--bg);
+  color: white;
+}
+
+/*.dark {*/
+/*    background-color: #151515;*/
+/*    color: white;*/
+/*}*/
+/*.light {*/
+/*    background: white;*/
+/*    color: black;*/
+/*}*/
+
+strong {
+  color: var(--celeste);
+}
+
+input, select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 2px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+}
+input::placeholder {
+  color: black;
+}
+input:focus {
+  border: 2px solid var(--celeste);
+}
+
+button {
+  all: unset;
+  text-align: center;
+}

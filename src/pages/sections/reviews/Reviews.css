@@ -1,0 +1,132 @@
+.reviews-section {
+    width: 70%;
+    min-height: 100vh;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 20px;
+    position: sticky;
+    top: 65px;
+    z-index: 3;
+    background: var(--bg);
+}
+
+.review-options nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.review-options nav input {
+    width: 58%;
+}
+
+.review-options nav div {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.review-options nav div select {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .review-options nav {
+        flex-direction: column;
+    }
+
+    .review-options nav input {
+        width: 100%;
+    }
+
+    .review-options nav div {
+        width: 100%;
+    }
+    .review-options nav div select {
+        width: 100%;
+    }
+}
+.reviews-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.review-filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: var(--plomo);
+    background: var(--celeste);
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+.review-filter:hover {
+    background: var(--dorado);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reviews-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.review-card {
+    width: 32.65%;
+    min-width: 280px;
+    aspect-ratio: 1 / 0.7;
+    background: var(--plomo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-radius: 5px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.review-card header, .review-card div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+.review-card header hr {
+    width: 90%;
+}
+
+.review-switch {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 7px;
+    border-radius: 10px;
+    background: var(--buttonPlomo);
+    cursor: pointer;
+}
